@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordMeleeCombat : Combat
+public class ScythMeleeCombat : Combat
 {
     [SerializeField] private Transform _attackCenter;
     [SerializeField] private float _attackRadius;
+
+    [SerializeField] private Transform _player;
+    [SerializeField] private float _nonAttackRadius;
 
     protected override void Update()
     {
@@ -14,7 +17,8 @@ public class SwordMeleeCombat : Combat
         {
             foreach (Collider collider in Physics.OverlapSphere(_attackCenter.position, _attackRadius))
             {
-                if (collider.TryGetComponent<EnemyStats>(out EnemyStats enemyStats))
+                if (collider.TryGetComponent<EnemyStats>(out EnemyStats enemyStats)
+                    && Vector3.Distance(_player.position, collider.transform.position) > _nonAttackRadius)
                 {
                     DealDamage(enemyStats);
                 }
@@ -28,5 +32,9 @@ public class SwordMeleeCombat : Combat
         Gizmos.color = Color.blue;
         Vector3 circlePosition = _attackCenter == null ? Vector3.zero : _attackCenter.position;
         Gizmos.DrawWireSphere(circlePosition, _attackRadius);
+
+        Gizmos.color = Color.white;
+        circlePosition = _player == null ? Vector3.zero : _player.position;
+        Gizmos.DrawWireSphere(circlePosition, _nonAttackRadius);
     }
 }

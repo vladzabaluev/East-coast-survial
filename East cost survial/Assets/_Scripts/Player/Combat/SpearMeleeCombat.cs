@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordMeleeCombat : Combat
+public class SpearMeleeCombat : Combat
 {
     [SerializeField] private Transform _attackCenter;
-    [SerializeField] private float _attackRadius;
+
+    [SerializeField] private Vector3 _halfBoxExtens;
+
+    private void Start()
+    {
+    }
 
     protected override void Update()
     {
         base.Update();
         if (_attackCooldown < 0)
         {
-            foreach (Collider collider in Physics.OverlapSphere(_attackCenter.position, _attackRadius))
+            foreach (Collider collider in Physics.OverlapBox(_attackCenter.position, _halfBoxExtens, _attackCenter.transform.rotation))
             {
                 if (collider.TryGetComponent<EnemyStats>(out EnemyStats enemyStats))
                 {
@@ -26,7 +31,7 @@ public class SwordMeleeCombat : Combat
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-        Vector3 circlePosition = _attackCenter == null ? Vector3.zero : _attackCenter.position;
-        Gizmos.DrawWireSphere(circlePosition, _attackRadius);
+        Vector3 boxPosition = _attackCenter == null ? Vector3.zero : _attackCenter.position;
+        Gizmos.DrawWireCube(boxPosition, _halfBoxExtens);
     }
 }
