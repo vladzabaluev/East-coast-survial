@@ -24,4 +24,9 @@ public class Combat : MonoBehaviour
             characterStats.TakeDamage(_damage);
         }
     }
+
+    public int GetDamageValue()
+    {
+        return _damage;
+    }
 }
