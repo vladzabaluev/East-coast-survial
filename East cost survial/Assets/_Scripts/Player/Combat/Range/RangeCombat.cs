@@ -8,6 +8,7 @@ public class RangeCombat : Combat
 
     [SerializeField] protected Projectile _projectile;
     [SerializeField] protected Transform _shotPoint;
+    protected Vector3 _targetPoint;
 
     // Start is called before the first frame update
     private void Start()
@@ -19,19 +20,24 @@ public class RangeCombat : Combat
     protected override void Update()
     {
         base.Update();
+        _targetPoint = LookAtCursor();
     }
 
-    private void LookAtCursor()
+    private Vector3 LookAtCursor()
     {
         Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hittedObject))
         {
-            if (hittedObject.transform != transform)
-            {
-                transform.LookAt(hittedObject.point);
-                transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-            }
-            //transform.LookAt(hittedObject.point);// - transform.position;
+            var direction = hittedObject.point - transform.position;
+
+            // You might want to delete this line.
+            // Ignore the height difference.
+            direction.y = 0;
+
+            // Make the transform look in the direction.
+            //  transform.forward = direction;
+            return direction;
         }
+        else { return Vector3.zero; }
     }
 }

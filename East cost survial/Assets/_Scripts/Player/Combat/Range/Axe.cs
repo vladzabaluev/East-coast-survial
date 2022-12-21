@@ -14,18 +14,21 @@ public class Axe : Projectile
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<EnemyStats>(out EnemyStats enemyStats))
+        if (other.gameObject.layer != gameObject.layer)
         {
-            foreach (Collider collider in Physics.OverlapBox(_boxCenter.position, _boxHalfExtents, transform.rotation))
+            if (other.TryGetComponent<EnemyStats>(out EnemyStats enemyStats))
             {
-                if (collider.TryGetComponent<EnemyStats>(out EnemyStats enemyStatsInWave))
+                foreach (Collider collider in Physics.OverlapBox(_boxCenter.position, _boxHalfExtents, transform.rotation))
                 {
-                    enemyStatsInWave.TakeDamage(_rangeCombat.GetDamageValue());
+                    if (collider.TryGetComponent<EnemyStats>(out EnemyStats enemyStatsInWave))
+                    {
+                        enemyStatsInWave.TakeDamage(_rangeCombat.GetDamageValue());
+                    }
                 }
             }
+            Destroy(gameObject);
         }
-
-        Destroy(gameObject);
+        //
     }
 
     private void OnDrawGizmos()

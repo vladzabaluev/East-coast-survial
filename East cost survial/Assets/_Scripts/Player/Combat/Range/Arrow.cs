@@ -12,10 +12,13 @@ public class Arrow : Projectile
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<EnemyStats>(out EnemyStats enemyStats))
+        if (other.gameObject.layer != gameObject.layer)
         {
-            enemyStats.TakeDamage(_rangeCombat.GetDamageValue());
+            if (other.TryGetComponent<EnemyStats>(out EnemyStats enemyStats))
+            {
+                enemyStats.TakeDamage(_rangeCombat.GetDamageValue());
+                Destroy(gameObject);
+            }
         }
-        Destroy(gameObject);
     }
 }

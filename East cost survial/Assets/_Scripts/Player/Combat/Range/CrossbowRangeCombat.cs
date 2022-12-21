@@ -10,6 +10,7 @@ public class CrossbowRangeCombat : RangeCombat
         if (_attackCooldown < 0)
         {
             Projectile projectile = Instantiate(_projectile, _shotPoint.position, transform.rotation);
+            projectile.AddStartImpulse(transform.forward);
             projectile.SetRangeCombat(this);
             _attackCooldown = 1 / _attackPerSecond;
         }

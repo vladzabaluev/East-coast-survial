@@ -10,7 +10,12 @@ public class AxeThrower : RangeCombat
         if (_attackCooldown < 0)
         {
             Projectile projectile = Instantiate(_projectile, _shotPoint.position, transform.rotation);
+
             projectile.SetRangeCombat(this);
+            //Debug.Log(_targetPoint);
+            //Debug.Log(_shotPoint.position);
+            projectile.SetTarget(_targetPoint);
+            //projectile.AddStartImpulse(_targetPoint/* - _shotPoint.position*/);
             _attackCooldown = 1 / _attackPerSecond;
         }
     }

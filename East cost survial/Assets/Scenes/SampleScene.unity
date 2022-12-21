@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 12632977}
   - component: {fileID: 12632976}
   - component: {fileID: 12632975}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 86609377}
   - component: {fileID: 86609378}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 189467793}
   - component: {fileID: 189467794}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1481,7 +1481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 308797894}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpearAttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1515,7 @@ GameObject:
   - component: {fileID: 309132382}
   - component: {fileID: 309132381}
   - component: {fileID: 309132380}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1981,7 +1981,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 370875925}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ArrowShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1996,7 +1996,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370875924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.62}
+  m_LocalPosition: {x: 0, y: 0, z: 1.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2126,13 +2126,13 @@ GameObject:
   m_Component:
   - component: {fileID: 446558980}
   - component: {fileID: 446558981}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Crossbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &446558980
 Transform:
   m_ObjectHideFlags: 0
@@ -2176,7 +2176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 454094801}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SwordAttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2283,7 +2283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 504501140}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'AxeShotPoint  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2298,7 +2298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504501139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.788, y: 1.238, z: 2.62}
+  m_LocalPosition: {x: 0.788, y: 1.238, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2429,7 +2429,7 @@ GameObject:
   - component: {fileID: 641885321}
   - component: {fileID: 641885320}
   - component: {fileID: 641885319}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2747,7 +2747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 678625062}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2786,7 +2786,7 @@ GameObject:
   - component: {fileID: 684277851}
   - component: {fileID: 684277850}
   - component: {fileID: 684277849}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Backpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3057,7 +3057,7 @@ GameObject:
   - component: {fileID: 827057372}
   - component: {fileID: 827057371}
   - component: {fileID: 827057370}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3190,7 +3190,7 @@ GameObject:
   - component: {fileID: 889149182}
   - component: {fileID: 889149184}
   - component: {fileID: 889149183}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3523,7 +3523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1013978053}
   - component: {fileID: 1013978054}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3731,7 +3731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093936737}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3870,7 +3870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1101602935}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ScytheAttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3902,7 +3902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1118917657}
   - component: {fileID: 1118917658}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scythe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4297,7 +4297,7 @@ GameObject:
   - component: {fileID: 1246818095}
   - component: {fileID: 1246818094}
   - component: {fileID: 1246818093}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4327,7 +4327,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246818091}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4489,7 +4489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1287052713}
   - component: {fileID: 1287052714}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4892,7 +4892,7 @@ GameObject:
   - component: {fileID: 1428517804}
   - component: {fileID: 1428517803}
   - component: {fileID: 1428517802}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5080,7 +5080,7 @@ GameObject:
   - component: {fileID: 1479147389}
   - component: {fileID: 1479147388}
   - component: {fileID: 1479147387}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5176,7 +5176,7 @@ GameObject:
   - component: {fileID: 1495790175}
   - component: {fileID: 1495790177}
   - component: {fileID: 1495790176}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5251,13 +5251,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1498273140}
   - component: {fileID: 1498273141}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AxeThrower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1498273140
 Transform:
   m_ObjectHideFlags: 0
@@ -5287,7 +5287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 25
-  _attackPerSecond: 2
+  _attackPerSecond: 1
   _projectile: {fileID: 2628658918378837289, guid: 9c8673ba8ee836e43850e1ee5c6e63ad, type: 3}
   _shotPoint: {fileID: 504501140}
 --- !u!1 &1559730145
@@ -5302,7 +5302,7 @@ GameObject:
   - component: {fileID: 1559730149}
   - component: {fileID: 1559730148}
   - component: {fileID: 1559730147}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5399,7 +5399,7 @@ GameObject:
   - component: {fileID: 1580008815}
   - component: {fileID: 1580008814}
   - component: {fileID: 1580008813}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5629,7 +5629,7 @@ GameObject:
   - component: {fileID: 1641640713}
   - component: {fileID: 1641640712}
   - component: {fileID: 1641640711}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5726,7 +5726,7 @@ GameObject:
   - component: {fileID: 1650760434}
   - component: {fileID: 1650760433}
   - component: {fileID: 1650760432}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5956,7 +5956,7 @@ GameObject:
   - component: {fileID: 1825691353}
   - component: {fileID: 1825691352}
   - component: {fileID: 1825691351}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6155,7 +6155,7 @@ GameObject:
   - component: {fileID: 1838725801}
   - component: {fileID: 1838725800}
   - component: {fileID: 1838725799}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: PlayerCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6298,8 +6298,7 @@ GameObject:
   - component: {fileID: 1883623934}
   - component: {fileID: 1883623939}
   - component: {fileID: 1883623940}
-  - component: {fileID: 1883623941}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6424,6 +6423,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   turnSmoothTime: 0.2
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &1883623939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6457,18 +6459,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1883623941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883623932}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0f6759dcf4076246be358cd3217b472, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1910242247
 GameObject:
   m_ObjectHideFlags: 0
@@ -6481,7 +6471,7 @@ GameObject:
   - component: {fileID: 1910242251}
   - component: {fileID: 1910242250}
   - component: {fileID: 1910242249}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6677,7 +6667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1948166573}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'CrossbowShotPoint '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6692,7 +6682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948166572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.62}
+  m_LocalPosition: {x: 0, y: 0, z: 1.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6711,7 +6701,7 @@ GameObject:
   - component: {fileID: 1963675733}
   - component: {fileID: 1963675732}
   - component: {fileID: 1963675731}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6902,7 +6892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2014178998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}

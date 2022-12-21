@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3924659862080152035}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BoxCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4414714812992691850}
   - component: {fileID: 4414714812992691841}
   - component: {fileID: 4414714812992691854}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 6741252351531219894}
   - component: {fileID: 2268033628613998415}
   - component: {fileID: 2628658918378837289}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,6 +208,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lifeTime: 3
   _speed: 20
+  target: {x: 0, y: 0, z: 0}
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
   _boxCenter: {fileID: 3924659862080152035}
   _boxHalfExtents: {x: 3, y: 1, z: 2}
 --- !u!1 &8025431843577989567
@@ -221,7 +225,7 @@ GameObject:
   - component: {fileID: 8025431843577989566}
   - component: {fileID: 8025431843577989554}
   - component: {fileID: 8025431843577989555}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Axe (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

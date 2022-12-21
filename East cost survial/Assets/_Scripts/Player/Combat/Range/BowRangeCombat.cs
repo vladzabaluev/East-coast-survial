@@ -12,6 +12,7 @@ public class BowRangeCombat : RangeCombat
         {
             Projectile projectile = Instantiate(_projectile, _shotPoint.position, transform.rotation);
             projectile.SetRangeCombat(this);
+            projectile.AddStartImpulse(transform.forward);
             _attackCooldown = 1 / _attackPerSecond;
         }
     }

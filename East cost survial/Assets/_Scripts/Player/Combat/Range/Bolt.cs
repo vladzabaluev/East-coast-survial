@@ -13,11 +13,15 @@ public class Bolt : Projectile
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<EnemyStats>(out EnemyStats enemyStats))
+        if (other.gameObject.layer != gameObject.layer)
         {
-            _lives--;
-            enemyStats.TakeDamage(_rangeCombat.GetDamageValue());
+            if (other.TryGetComponent<EnemyStats>(out EnemyStats enemyStats))
+            {
+                enemyStats.TakeDamage(_rangeCombat.GetDamageValue());
+                _lives--;
+            }
         }
+
         if (_lives <= 0)
         {
             Destroy(gameObject);

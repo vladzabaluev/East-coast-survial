@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 637000644316191891}
   - component: {fileID: 637000644316191888}
   - component: {fileID: 637000644316191884}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,4 +129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lifeTime: 5
   _speed: 20
+  target: {x: 0, y: 0, z: 0}
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
   _lives: 5
