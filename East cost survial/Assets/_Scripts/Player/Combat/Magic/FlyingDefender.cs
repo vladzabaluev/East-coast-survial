@@ -48,6 +48,12 @@ public class FlyingDefender : Combat
         return new Vector3(x, y, z);
     }
 
+    public override void Improve()
+    {
+        base.Improve();
+        _speedFlying *= 1.2f;
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;

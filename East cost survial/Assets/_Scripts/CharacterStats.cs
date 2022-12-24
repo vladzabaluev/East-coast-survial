@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class CharacterStats : MonoBehaviour
 {
-    [SerializeField] private int _maxHealth;
-    [SerializeField] private int _currentHealth;
+    [SerializeField] private float _maxHealth;
+    [SerializeField] private float _currentHealth;
 
     [SerializeField] private Slider healthSlider;
 
@@ -16,7 +16,7 @@ public class CharacterStats : MonoBehaviour
         SetSliderValue();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         _currentHealth -= damage;
         SetSliderValue();

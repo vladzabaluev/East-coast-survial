@@ -13,14 +13,19 @@ public class HolyMagic : Combat
         {
             foreach (Collider collider in Physics.OverlapSphere(transform.position, _attackRadius))
             {
-                if (collider.TryGetComponent<EnemyStats>(out EnemyStats enemyStats)
-                   )
+                if (collider.TryGetComponent<EnemyStats>(out EnemyStats enemyStats))
                 {
                     DealDamage(enemyStats);
                 }
             }
             _attackCooldown = 1 / _attackPerSecond;
         }
+    }
+
+    public override void Improve()
+    {
+        base.Improve();
+        _attackRadius *= 1.2f;
     }
 
     private void OnDrawGizmos()

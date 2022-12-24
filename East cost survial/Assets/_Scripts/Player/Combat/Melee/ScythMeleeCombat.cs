@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScythMeleeCombat : Combat
 {
     [SerializeField] private Transform _attackCenter;
-    [SerializeField] private float _attackRadius;
+    [SerializeField] public float _attackRadius;
 
     [SerializeField] private Transform _player;
     [SerializeField] private float _nonAttackRadius;
@@ -25,6 +25,12 @@ public class ScythMeleeCombat : Combat
             }
             _attackCooldown = 1 / _attackPerSecond;
         }
+    }
+
+    public override void Improve()
+    {
+        base.Improve();
+        _attackRadius *= 1.2f;
     }
 
     private void OnDrawGizmos()

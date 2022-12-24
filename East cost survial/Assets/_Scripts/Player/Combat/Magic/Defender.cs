@@ -5,7 +5,7 @@ using UnityEngine;
 public class Defender : MonoBehaviour
 {
     [HideInInspector]
-    public int Damage;
+    public float Damage;
 
     private void OnTriggerEnter(Collider other)
     {

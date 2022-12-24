@@ -19,7 +19,6 @@ public class EnemyMeleeCombat : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        Debug.Log(collision.transform.name);
         if (collision.transform.TryGetComponent<PlayerStats>(out PlayerStats playerStats))
         {
             if (_attackCooldown < 0)
